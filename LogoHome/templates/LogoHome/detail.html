@@ -1,0 +1,14 @@
+<h1>{{ suppliers.name_char }}</h1>
+<ul>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="{% url 'LogoHome:type' suppliers.id %}" method="post">
+        {% csrf_token %}
+        {% for hats in suppliers.hats_set.all %}
+            <input type="radio" name="hats" id="hats{{ forloop.counter }}" value="{{ hats.id }}" required>
+            <label for="hats{{ forloop.counter }}">{{ hats.type_char }}</label><br>
+        {% endfor %}
+        <input type="submit" value="type">
+    </form>
+</ul>

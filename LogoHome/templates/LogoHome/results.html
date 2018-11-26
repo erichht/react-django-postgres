@@ -1,0 +1,9 @@
+<h1>{{ suppliers.name_char }}</h1>
+
+<ul>
+    {% for hats in suppliers.hats_set.all %}
+        <li>{{ hats.type_char }} -- {{ hats.memo_text }}</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'LogoHome:detail' suppliers.id %}">Select again?</a>

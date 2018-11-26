@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: django-LogoHome
+Version: 0.1
+Summary: A Django-Postgres-React app to display relevant logo printing and embroiding informations
+Home-page: https://www.example.com
+Author: Haitao
+Author-email: erichht71@gmail.com
+License: UNKNOWN
+Description: <built-in method read of file object at 0x7f54340ac4b0>
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: 
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: TOpic :: Internet :: WWW/HTTP :: Dynamic Content

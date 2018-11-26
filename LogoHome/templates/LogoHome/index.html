@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'LogoHome/style.css' %}" >
+
+{% if latest_suppliers_list %}
+    <ul>
+        {% for supplier in latest_suppliers_list %}
+            <li>
+                <a href="{% url 'LogoHome:detail' supplier.id %}">{{ supplier.no_char }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No LogoHome are available.</p>
+{% endif %}
